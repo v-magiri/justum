@@ -11,7 +11,6 @@ function App() {
     <>
       <BrowserRouter>
         <NavbarComponent/>  
-
       </BrowserRouter>
     </>
   )
