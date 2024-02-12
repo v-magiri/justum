@@ -1,0 +1,95 @@
+/* START OF BANNER STYLES */
+#home{
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: row;
+}
+.bannerContainer .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1.5rem 3rem;
+}
+.introIllustration .intro-icon{
+    width: 30rem;
+    object-fit: cover;
+}
+.intro .helloTxt,.nameContainer{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+.intro .careerDsc{
+    font-size: 0.985rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+.nameContainer .nameTxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+.nameContainer .careerTitle{
+    display: block;
+    line-height: 2.5rem;
+}
+.intro .intro-cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.intro-cta .ctaBtn{
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding:0.5rem;
+    margin:0 0.3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.intro .ctaBtn .socialIcon{
+    width: 16px;
+}
+.ctaBtn .ctaBtnTxt{
+    padding:0.25rem 0;
+}
+/* END OF BANNER STYLES  */
+
+@media (max-width:920px) {
+    .bannerContainer{
+        padding:0.5rem 0.5rem;
+        max-width: 90vw;
+    }
+    .bannerContainer .introIllustration .intro-icon{
+        width: 24rem;
+    }
+}
+@media screen and (max-width:840px){
+    .bannerContainer .introIllustration .intro-icon{
+        width: 20rem;
+    }
+    .intro .helloTxt,.nameContainer{
+        font-size: 1.15rem;
+    }
+    .nameContainer .nameTxt{
+        font-size: 1.85rem;
+    }
+}
+@media screen  and (max-width:768px){
+    .bannerContainer{
+        flex-direction: column;
+    }
+    .bannerContainer .introIllustration{
+        width: 100%;
+        text-align: center;
+    }
+    .bannerContainer .introIllustration .intro-icon{
+        width: 24rem;
+    }
+}

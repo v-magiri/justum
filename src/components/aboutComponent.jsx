@@ -1,9 +1,11 @@
-const AboutComponent=()=>{
-    return (
-        <div className="about-container">
+import React from 'react'
 
-        </div>
-    );
+const aboutComponent = () => {
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
-export default AboutComponent;
+export default aboutComponent

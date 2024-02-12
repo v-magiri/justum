@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import {NavbarComponent,AboutComponent} from './index';
+import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {NavbarComponent,AboutComponent,BannerComponent} from './index';
 import { BrowserRouter } from 'react-router-dom';
+
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <BrowserRouter>
-        <NavbarComponent/>  
+        <NavbarComponent/> 
+        <BannerComponent/>
       </BrowserRouter>
     </>
   )
