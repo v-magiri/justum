@@ -1,0 +1,26 @@
+[
+    {
+        "project_name":"AEUAFRICA",
+        "project_description":"Website and CMS developed for the Alliance for Entreprenuerial Universities in Africa",
+        "technologies":"Laravel MVC",
+        "image":"project_1",
+        "owner":"Alliance for Entreprenuerial Universities in Africa",
+        "url":"https://aeuafrica.org/"
+    },
+    {
+        "project_name":"FAMALINK",
+        "project_description":"An agritech solution aimed at helping farmers to make data driven farm budgeting and other farm decisions",
+        "technologies":"Laravel,Docker,React,Kotlin",
+        "image":"project_2",
+        "owner":"FAMALINK",
+        "url":"none"
+    },
+    {
+        "project_name":"Transport Requisition Portal",
+        "project_description":"A web solution designed for K-UNITY sacco for manage transport requisitions in the institution and manage fleet",
+        "technologies":"Spring Boot,Docker,Angular,JWT",
+        "image":"project_3",
+        "owner":"K-UNITY SACCO",
+        "url":"none"
+    }
+]
