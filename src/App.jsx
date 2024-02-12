@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {NavbarComponent,AboutComponent,BannerComponent} from './index';
+import {NavbarComponent,AboutComponent,BannerComponent,Projects} from './index';
 import { BrowserRouter } from 'react-router-dom';
 
 
@@ -13,6 +13,8 @@ function App() {
       <BrowserRouter>
         <NavbarComponent/> 
         <BannerComponent/>
+        <AboutComponent/>
+        <Projects/>
       </BrowserRouter>
     </>
   )

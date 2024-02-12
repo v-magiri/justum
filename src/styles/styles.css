@@ -61,6 +61,34 @@
 }
 /* END OF BANNER STYLES  */
 
+/* START OF ABOUT US STYLES */
+.aboutSect{
+    background-color: var(--light-white);
+    padding:1.5rem 3rem;
+    height: 100vh;
+}
+.aboutSect .aboutContainer{
+    display: flex;
+    align-items: center;
+}
+.aboutSect .profileContainer .profileImg{
+    width: 25rem;
+    border-radius: 60%;
+    border: 2px solid var(--gold);
+}
+.aboutContainer .summaryContainer{
+    padding:0.8rem 2rem;
+}
+
+/* END OF ABOUT US STYLES  */
+
+/* START OF PROJECT STYLES */
+.projectSect{
+    height: 100vh;
+}
+
+/* END OF PROJET STYLES  */
+
 @media (max-width:920px) {
     .bannerContainer{
         padding:0.5rem 0.5rem;
