@@ -84,7 +84,20 @@
 
 /* START OF PROJECT STYLES */
 .projectSect{
-    height: 100vh;
+    padding:1.2rem 0;
+}
+.projectContainer .projectCard{
+    border-radius: 0.8rem;
+    box-shadow: 0 0 7px 0 #4444441a;
+    margin:0 1.2rem;
+    /* box-shadow: ; */
+}
+.projectCard .illustration{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+.projectContainer .projectCard .projectIllustration{
+    width: 100%;
 }
 
 /* END OF PROJET STYLES  */
