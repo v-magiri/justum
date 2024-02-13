@@ -2,9 +2,9 @@ import React from 'react'
 
 const contactComponent = () => {
   return (
-    <div>
-      
-    </div>
+    <sections>
+      <h4 className='text-center'>Get in touch</h4>
+    </sections>
   )
 }
 

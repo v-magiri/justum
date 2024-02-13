@@ -85,22 +85,46 @@
 /* START OF PROJECT STYLES */
 .projectSect{
     padding:1.2rem 0;
+    margin-bottom: 3rem;
 }
 .projectContainer .projectCard{
-    border-radius: 0.8rem;
-    box-shadow: 0 0 7px 0 #4444441a;
     margin:0 1.2rem;
-    /* box-shadow: ; */
+    border-radius: 0.5rem;
+    box-shadow: 0 0 7px 0 #4444441a;
+    overflow: hidden; /* Ensure rounded corners apply correctly */
 }
 .projectCard .illustration{
-    width: 100%;
-    border-radius: 0.8rem;
+    width:100%;
+    border-top-left-radius: 0.5rem; 
+    border-top-right-radius: 0.5rem;
 }
 .projectContainer .projectCard .projectIllustration{
     width: 100%;
 }
-
+.projectCard .projectDesc{
+    padding:0.8rem 0.6rem;
+}
+.projectDesc .projectTitle{
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    margin: 1.2rem auto;
+}
+.projectDesc .desc{
+    margin-top: 0.7rem;
+    font-size: 0.985rem;
+}
 /* END OF PROJET STYLES  */
+
+/* START OF SKILLS STYLES */
+.skillsContainer{
+    background-image: url('../assets/skills_background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* END OF SKILLs STYLES  */
 
 @media (max-width:920px) {
     .bannerContainer{
