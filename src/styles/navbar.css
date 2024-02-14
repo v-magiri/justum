@@ -9,6 +9,7 @@
     box-shadow: 0 0 7px 0 #4444441a;
     justify-content: space-between;
     position: sticky;
+    overflow-x: hidden;
     top: 0;
     z-index: 2;
 }
@@ -18,7 +19,7 @@
 }
 .navbar .menu .menuContainer .nav-item{
     cursor: pointer;
-    transition: all 0.5s linear;
+    /* transition: all 0.5s linear; */
 }
 .nav-item a{
     text-decoration: none;

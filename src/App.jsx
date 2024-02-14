@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {NavbarComponent,AboutComponent,BannerComponent,Projects,SkillsComponent} from './index';
+import {NavbarComponent,AboutComponent,BannerComponent,Projects,SkillsComponent,ContactComponent} from './index';
 import { BrowserRouter } from 'react-router-dom';
 
 
@@ -16,6 +16,7 @@ function App() {
         <AboutComponent/>
         <Projects/>
         <SkillsComponent/>
+        <ContactComponent/>
       </BrowserRouter>
     </>
   )

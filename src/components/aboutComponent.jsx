@@ -1,5 +1,8 @@
 import React from 'react';
 import profile from '../assets/profile.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const AboutComponent = () => {
   return (
@@ -21,6 +24,12 @@ const AboutComponent = () => {
              and organizations in Kenya and beyond.
           </p>
           <p>Do you have a software idea you would like implemented? I’m here for you!</p>
+          <div className=''>
+            <Link to='https://drive.google.com/file/d/1cwtSK38YjjRfccl6MPj3Dl1K3q8ZzYYK/view?usp=drive_link' className='downloadBtn'>
+              <FontAwesomeIcon icon={faCloudArrowDown}/>
+              <span className='downloadTitle'>Download Resume</span>
+            </Link>
+          </div>
         </div>
 
       </div>
