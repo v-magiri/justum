@@ -119,10 +119,37 @@
 /* START OF SKILLS STYLES */
 .skillsContainer{
     background-image: url('../assets/skills_background.jpg');
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    padding:1.2rem 3rem;
 }
+.skillsContainer .title{
+    padding:0.9rem 0;
+    font-weight: 700;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon-container {
+    text-align: center;
+    margin: 10px;
+    padding:0.4rem 1.25rem;
+    cursor: pointer;
+}
+.icon-container:hover{
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+.icon-container .icon{
+    width: 64px;
+}
+.icon-container .iconTitle{
+    padding:0.5rem 0;
+    font-size: 0.985rem;
+}
+  
 
 /* END OF SKILLs STYLES  */
 
