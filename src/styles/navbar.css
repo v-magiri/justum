@@ -1,36 +1,62 @@
 .navbar{
     width:100vw;
     height: 5rem;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
     margin:0 auto;
-    padding:1rem 2rem;
+    padding:0 1.5rem;
     display: flex;
     align-items: center;
     background-color: var(--white);
     box-shadow: 0 0 7px 0 #4444441a;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 2;
 }
-.navbar .menu ul{
-    list-style: none;
+.nav-links .active{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.mob-links .active{
+    color: var(--orange) !important;
+    font-weight: 900;
+}
+.navbar .nav-links{
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.navbar .menu .menuContainer .nav-item{
+.navbar .mobile-nav .mob-links{
+    display: flex;
+    flex-direction: column;
+}
+.navbar .menu .nav-item,.mobile-nav .mob-item{
     cursor: pointer;
-    transition: all 0.5s linear;
 }
-.nav-item a{
+.nav-item::after{
+    content:"";
+    width:0%;
+    height:2px;
+    margin:auto;
+    display:block;
+    transition:0.5s;
+    background:var(--primary-color);
+}
+.mob-links .mob-item:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item,.mob-links .mob-item{
     text-decoration: none;
     padding: 1rem;
     font-size: 1.15rem;
     color: var(--black);
 }
 .nav-item:hover{
-    /* padding-bottom: 0.5rem; */
-    border-bottom: 2px solid var(--primary-color);
-}
-.nav-item:hover a{
     color: var(--primary-color);
 }
 .navbar .logo{
@@ -48,4 +74,39 @@
 }
 .contactBtn .contactIcon{
     padding-right: 0.6rem;
+}
+
+.navbar .mob-menu-icon .mob-menu{
+    width:3rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+.navbar > .mob-menu-icon{
+    display: none;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height:fit-content;
+    background-color:var(--white);
+    display: none;
+}
+@media screen and (max-width:840px) {
+    .navbar{
+        padding:1rem 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar > .mob-menu-icon{
+        display: block;
+    }
+    .navbar .nav-links,.cta{
+        display: none;
+    }
+    .mobile-nav.active{
+        display: block;
+    }
 }

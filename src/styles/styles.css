@@ -1,11 +1,8 @@
 /* START OF BANNER STYLES */
-#home{
-    height: calc(100vh - 5rem);
+.bannerContainer{
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-}
-.bannerContainer{
     display: flex;
     flex-direction: row;
 }
@@ -13,10 +10,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:1.5rem 3rem;
+    padding:1.5rem 2.5rem;
 }
 .introIllustration .intro-icon{
-    width: 30rem;
+    width: 28rem;
     object-fit: cover;
 }
 .intro .helloTxt,.nameContainer{
@@ -63,32 +60,234 @@
 
 /* START OF ABOUT US STYLES */
 .aboutSect{
-    background-color: var(--light-white);
-    padding:1.5rem 3rem;
-    height: 100vh;
-}
-.aboutSect .aboutContainer{
+    background-color: var(--light-grey);
+    padding:1.5rem 1.5rem;
+    width:100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
-.aboutSect .profileContainer .profileImg{
-    width: 25rem;
+.sectTitle{
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+.aboutSect .profileImg{
+    width: 15rem;
     border-radius: 60%;
     border: 2px solid var(--gold);
+    object-fit: cover;
+    margin-top: 0.8rem;
 }
-.aboutContainer .summaryContainer{
-    padding:0.8rem 2rem;
+.aboutSect .summaryContainer{
+    max-width: 60vw;
+    text-align: center;
+}
+.aboutSect .downloadBtn{
+    background-color: var(--orange);
+    color: var(--white);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding:0.6rem 0.8rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.downloadBtn .downloadTitle{
+    margin-left: 0.4rem;
 }
 
 /* END OF ABOUT US STYLES  */
 
 /* START OF PROJECT STYLES */
 .projectSect{
-    height: 100vh;
+    padding:0.6rem 2.5rem;
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projectContainer .projectCard{
+    margin:0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 7px 0 #4444441a;
+    overflow: hidden; /* Ensure rounded corners apply correctly */
+}
+.projectCard .illustration{
+    width:100%;
+    border-top-left-radius: 0.5rem; 
+    border-top-right-radius: 0.5rem;
+}
+.projectContainer .projectCard .projectIllustration{
+    width: 100%;
+}
+.projectCard .projectDesc{
+    padding:0.8rem 0.6rem;
+}
+.projectDesc .projectTitle{
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+}
+.projectTitle .link{
+    border: 1px solid var(--orange);
+    padding:0.4rem 1.2rem;
+    border-radius: 2rem;
+    color: var(--primary-color);
+}
+.projectDesc .desc{
+    margin-top: 0.7rem;
+    font-size: 0.985rem;
+}
+.projectDesc .techContainer{
+    display: flex;
+    flex-direction: column;
+}
+.techContainer .techBox{
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.techContainer .techTitle{
+    font-size: 0.985rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+.techIcon{
+    width:32px;
+    margin:0 0.3rem;
+}
+.ownerContainer{
+    padding:0.5rem 0;
+}
+.ownerContainer .ownerName{
+    color:var(--primary-color);
+    font-weight: 700;
+}
+/* END OF PROJETS STYLES  */
+
+/* START OF SKILLS STYLES */
+.skillsContainer{
+    background-image: url('../assets/skills_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width:100vw;
+    padding:1.2rem 3rem;
+}
+.skillsContainer .title{
+    padding:0.9rem 0;
+    font-weight: 700;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon-container {
+    text-align: center;
+    margin: 10px;
+    padding:0.4rem 1.25rem;
+    cursor: pointer;
+}
+.icon-container:hover{
+    background-color: var(--white);
+    border-radius: 0.5rem;
+}
+.icon-container .icon{
+    width: 64px;
+}
+.icon-container .iconTitle{
+    padding:0.5rem 0;
+    font-size: 0.985rem;
+}
+  
+
+/* END OF SKILLs STYLES  */
+
+/* START OF CONTACT STYLES */
+
+.contactSect{
+    background-color: var(--light-grey);
+    display: flex;
+    overflow-x: hidden;
+    width:100vw;
+    flex-direction: column;
+}
+.contactBox{
+    margin:0 auto;
+    max-width: 75vw;
+    /* max-width: 75vw; */
 }
 
-/* END OF PROJET STYLES  */
+.footer{
+    background-color: var(--primary-color);
+    color:var(--white);
+    overflow-x: hidden;
+    padding: 2rem 0;
+}
+.contactSect .contactForm{
+    display: flex;
+    flex-direction: column;
+    padding:1.2rem 0.8rem;
+}
+.contactForm .formInput{
+    border: none;
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--grey) !important;
+}
+.formInput:focus{
+    outline: 2px solid var(--primary-color);
+}
+.contactForm .submitBtn{
+    background-color: var(--primary-color);
+    border:none;
+    outline: none;
+    padding:0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    width: 10rem;
+    font-size: 1.15rem;
+    align-self: center;
+}
+.footer .socials{
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap:wrap ;
+}
+.socials .socialIcon{
+    width: 40px;
+    padding:0 0.4rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+/* END OF CONTACT STYLES  */
+
+
+/* RESPONSIVENESS */
+@media screen and (min-width:992px) {
+    .projectContainer .projectCard{
+        width:calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width:992px) {
+    .projectContainer .projectCard{
+        width: calc(50% - 20px);
+    }
+}
 @media (max-width:920px) {
     .bannerContainer{
         padding:0.5rem 0.5rem;
@@ -98,6 +297,7 @@
         width: 24rem;
     }
 }
+
 @media screen and (max-width:840px){
     .bannerContainer .introIllustration .intro-icon{
         width: 20rem;
@@ -112,6 +312,7 @@
 @media screen  and (max-width:768px){
     .bannerContainer{
         flex-direction: column;
+        max-width:90vw;
     }
     .bannerContainer .introIllustration{
         width: 100%;
@@ -119,5 +320,55 @@
     }
     .bannerContainer .introIllustration .intro-icon{
         width: 24rem;
+    }
+    .aboutSect .summaryContainer{
+        max-width: 75vw;
+    }
+    .skillsContainer{
+        padding:0.8rem 1.5rem;
+    }
+    .projectSect{
+        padding:0.6rem 1.5rem;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .projectSect{
+        padding:0.6rem 0.4rem;
+    }
+}
+@media screen and (max-width:576px) {
+    .aboutSect .summaryContainer{
+        max-width: 80vw;
+    }
+    .projectSect{
+        padding:0.6rem 1.2rem;
+    }
+    .projectContainer .projectCard{
+        width: calc(100% - 20px);
+    }
+}
+@media screen  and (max-width:480px){ 
+    .aboutSect .summaryContainer{
+        max-width:90vw;
+    }
+    .skillsContainer{
+        padding:0.4rem 0.5rem;
+    }
+}
+@media screen and (max-width:420px){
+    .bannerContainer .intro{
+        padding:0;
+    }
+    .introIllustration .intro-icon{
+        display: none;
+    }
+    .footerTxt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTxt .copyrightTxt, .footerTxt .profileName{
+        padding:0.3rem 0;
     }
 }
