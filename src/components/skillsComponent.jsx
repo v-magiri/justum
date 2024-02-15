@@ -31,7 +31,7 @@ const SkillsComponent = () => {
       <div className="icons">
         {
           tools.map((tool)=>(
-            <div className="icon-container">
+            <div className="icon-container" key={tool.id}>
               <img src={`/icons/${tool.icon}`} alt={tool.name} className='icon' />
               <p className='iconTitle'>{tool.name}</p>
             </div>

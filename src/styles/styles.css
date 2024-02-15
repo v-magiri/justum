@@ -176,7 +176,7 @@
     /* max-width: 75vw; */
 }
 
-.contactSect .footer{
+.footer{
     background-color: var(--primary-color);
     color:var(--white);
     padding: 2rem 0;
