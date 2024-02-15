@@ -1,11 +1,8 @@
 /* START OF BANNER STYLES */
-#home{
-    /* height: calc(100vh - 5rem); */
+.bannerContainer{
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
-}
-.bannerContainer{
     display: flex;
     flex-direction: row;
 }
@@ -13,10 +10,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:1.5rem 3rem;
+    padding:1.5rem 2.5rem;
 }
 .introIllustration .intro-icon{
-    width: 30rem;
+    width: 28rem;
     object-fit: cover;
 }
 .intro .helloTxt,.nameContainer{
@@ -63,25 +60,34 @@
 
 /* START OF ABOUT US STYLES */
 .aboutSect{
-    background-color: var(--light-white);
-    padding:1.5rem 3rem;
-}
-.aboutSect .aboutContainer{
+    background-color: var(--light-grey);
+    padding:1.5rem 1.5rem;
+    width:100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
-.aboutSect .profileContainer .profileImg{
-    width: 25rem;
+.aboutSect .aboutTitle{
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+.aboutSect .profileImg{
+    width: 15rem;
     border-radius: 60%;
     border: 2px solid var(--gold);
+    object-fit: cover;
+    margin-top: 0.8rem;
 }
-.aboutContainer .summaryContainer{
-    padding:0.8rem 2rem;
+.aboutSect .summaryContainer{
+    max-width: 60vw;
+    text-align: center;
 }
-.aboutContainer .downloadBtn{
+.aboutSect .downloadBtn{
     background-color: var(--orange);
     color: var(--white);
     margin-top: 3rem;
+    margin-bottom: 1.5rem;
     padding:0.6rem 0.8rem;
     border-radius: 1rem;
     text-decoration: none;
@@ -96,6 +102,8 @@
 .projectSect{
     padding:1.2rem 0;
     margin-bottom: 3rem;
+    overflow-x: hidden;
+    width:100vw;
 }
 .projectContainer .projectCard{
     margin:0 1.2rem;
@@ -124,13 +132,15 @@
     margin-top: 0.7rem;
     font-size: 0.985rem;
 }
-/* END OF PROJET STYLES  */
+/* END OF PROJETS STYLES  */
 
 /* START OF SKILLS STYLES */
 .skillsContainer{
     background-image: url('../assets/skills_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    width:100vw;
     padding:1.2rem 3rem;
 }
 .skillsContainer .title{
@@ -168,6 +178,8 @@
 .contactSect{
     background-color: var(--light-grey);
     display: flex;
+    overflow-x: hidden;
+    width:100vw;
     flex-direction: column;
 }
 .contactBox{
@@ -179,6 +191,7 @@
 .footer{
     background-color: var(--primary-color);
     color:var(--white);
+    overflow-x: hidden;
     padding: 2rem 0;
 }
 .contactSect .contactForm{
@@ -225,11 +238,8 @@
 
 /* END OF CONTACT STYLES  */
 
-@media screen and (min-width:768px) {
-    #home,.aboutSect{
-        height: calc(100vh - 5rem);
-    }
-}
+
+/* RESPONSIVENESS */
 @media (max-width:920px) {
     .bannerContainer{
         padding:0.5rem 0.5rem;
@@ -253,6 +263,7 @@
 @media screen  and (max-width:768px){
     .bannerContainer{
         flex-direction: column;
+        max-width:90vw;
     }
     .bannerContainer .introIllustration{
         width: 100%;
@@ -261,14 +272,22 @@
     .bannerContainer .introIllustration .intro-icon{
         width: 24rem;
     }
+    .aboutSect .summaryContainer{
+        max-width: 75vw;
+    }
     .skillsContainer{
         padding:0.8rem 1.5rem;
     }
-    .aboutSect .aboutContainer{
-        flex-direction: column;
+}
+@media screen and (max-width:576px) {
+    .aboutSect .summaryContainer{
+        max-width: 80vw;
     }
 }
 @media screen  and (max-width:480px){ 
+    .aboutSect .summaryContainer{
+        max-width:90vw;
+    }
     .skillsContainer{
         padding:0.4rem 0.5rem;
     }

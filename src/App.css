@@ -19,3 +19,6 @@
   --dark-grey:#AAAAAA;
   --transparent:rgba(0,0,0,0.5);
 }
+body{
+  overflow-x: hidden;
+}
