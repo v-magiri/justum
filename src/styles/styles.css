@@ -356,3 +356,19 @@
         padding:0.4rem 0.5rem;
     }
 }
+@media screen and (max-width:420px){
+    .bannerContainer .intro{
+        padding:0;
+    }
+    .introIllustration .intro-icon{
+        display: none;
+    }
+    .footerTxt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerTxt .copyrightTxt, .footerTxt .profileName{
+        padding:0.3rem 0;
+    }
+}

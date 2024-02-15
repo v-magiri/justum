@@ -15,9 +15,9 @@ function App() {
         <BannerComponent/>
         <AboutComponent/>
         <Projects/>
-        {/* <SkillsComponent/> */}
-        {/* <ContactComponent/> */}
-        {/* <Footer/> */}
+        <SkillsComponent/>
+        <ContactComponent/>
+        <Footer/>
       </BrowserRouter>
     </>
   )
