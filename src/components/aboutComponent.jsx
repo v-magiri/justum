@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const AboutComponent = () => {
   return (
     <section id='about' className='aboutSect'>
-      <h4 className='text-center aboutTitle'>Meet Victor</h4>
+      <h4 className='text-center sectTitle'>Meet Victor</h4>
       <img src={profile} alt="Profile Image" className='profileImg' />
       <div className="summaryContainer mt-3">
         <p>

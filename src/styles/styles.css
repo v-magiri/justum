@@ -68,7 +68,7 @@
     align-items: center;
     overflow-x: hidden;
 }
-.aboutSect .aboutTitle{
+.sectTitle{
     font-weight: 700;
     font-size: 1.65rem;
 }
@@ -100,13 +100,14 @@
 
 /* START OF PROJECT STYLES */
 .projectSect{
-    padding:1.2rem 0;
-    margin-bottom: 3rem;
-    overflow-x: hidden;
-    width:100vw;
+    padding:0.6rem 2.5rem;
+}
+.projectContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
 .projectContainer .projectCard{
-    margin:0 1.2rem;
+    margin:0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 7px 0 #4444441a;
     overflow: hidden; /* Ensure rounded corners apply correctly */
@@ -126,11 +127,47 @@
     font-size: 1.2rem;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin: 1.2rem auto;
+}
+.projectTitle .link{
+    border: 1px solid var(--orange);
+    padding:0.4rem 1.2rem;
+    border-radius: 2rem;
+    color: var(--primary-color);
 }
 .projectDesc .desc{
     margin-top: 0.7rem;
     font-size: 0.985rem;
+}
+.projectDesc .techContainer{
+    display: flex;
+    flex-direction: column;
+}
+.techContainer .techBox{
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.techContainer .techTitle{
+    font-size: 0.985rem;
+    font-weight: 700;
+    color: var(--orange);
+}
+.techIcon{
+    width:32px;
+    margin:0 0.3rem;
+}
+.ownerContainer{
+    padding:0.5rem 0;
+}
+.ownerContainer .ownerName{
+    color:var(--primary-color);
+    font-weight: 700;
 }
 /* END OF PROJETS STYLES  */
 
@@ -240,6 +277,17 @@
 
 
 /* RESPONSIVENESS */
+@media screen and (min-width:992px) {
+    .projectContainer .projectCard{
+        width:calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width:992px) {
+    .projectContainer .projectCard{
+        width: calc(50% - 20px);
+    }
+}
 @media (max-width:920px) {
     .bannerContainer{
         padding:0.5rem 0.5rem;
@@ -249,6 +297,7 @@
         width: 24rem;
     }
 }
+
 @media screen and (max-width:840px){
     .bannerContainer .introIllustration .intro-icon{
         width: 20rem;
@@ -278,10 +327,25 @@
     .skillsContainer{
         padding:0.8rem 1.5rem;
     }
+    .projectSect{
+        padding:0.6rem 1.5rem;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .projectSect{
+        padding:0.6rem 0.4rem;
+    }
 }
 @media screen and (max-width:576px) {
     .aboutSect .summaryContainer{
         max-width: 80vw;
+    }
+    .projectSect{
+        padding:0.6rem 1.2rem;
+    }
+    .projectContainer .projectCard{
+        width: calc(100% - 20px);
     }
 }
 @media screen  and (max-width:480px){ 

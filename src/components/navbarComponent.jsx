@@ -14,8 +14,6 @@ const NavbarComponent = () => {
   return (
     <nav className='navbar'>
             <img src={vlogo} alt="Logo"  className='logo'/>
-            
-
 
             <div className='nav-links'>                
                 <Link className='nav-item' activeClass='active' to='home' spy={true} smooth='true' offset={-100} duration={500}>Home</Link>
@@ -35,11 +33,11 @@ const NavbarComponent = () => {
 
             <div className={`mobile-nav text-center ${showMenu ? 'active':''}`}>
                 <div className="mob-links">
-                    <Link className='mob-item' activeClass='active' to='home' spy={true} smooth='true' offset={-100} duration={500}>Home</Link>
-                    <Link className='mob-item' activeClass='active' to='about' spy={true} smooth='true' offset={-100} duration={500}>About</Link>
-                    <Link className='mob-item' activeClass='active' to='projects' spy={true} smooth='true' offset={-100} duration={500}>Projects</Link>
-                    <Link className='mob-item' activeClass='active' to='skills' spy={true} smooth='true' offset={-100} duration={500}>Skills</Link>
-                    <Link className='mob-item' activeClass='active' to='contact' spy={true} smooth='true' offset={-100} duration={500}>Contact</Link>
+                    <Link className='mob-item' activeClass='active' to='home' spy={true} smooth='true' offset={-100} duration={500} onClick={toggleMenu}>Home</Link>
+                    <Link className='mob-item' activeClass='active' to='about' spy={true} smooth='true' offset={-100} duration={500} onClick={toggleMenu}>About</Link>
+                    <Link className='mob-item' activeClass='active' to='projects' spy={true} smooth='true' offset={-100} duration={500} onClick={toggleMenu}>Projects</Link>
+                    <Link className='mob-item' activeClass='active' to='skills' spy={true} smooth='true' offset={-100} duration={500} onClick={toggleMenu}>Skills</Link>
+                    <Link className='mob-item' activeClass='active' to='contact' spy={true} smooth='true' offset={-100} duration={500} onClick={toggleMenu}>Contact</Link>
                 </div>
             </div>
 
